@@ -1,0 +1,320 @@
+html, body, #app, .main-container {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.main-container {
+  background-image: url(./assets/blog-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  line-height: 1.428571429;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 250%;
+  margin-bottom: 0;
+  color: #0275d8;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.active {
+  color: black;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: white;
+  margin: 10px;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  outline-width: 0;
+}
+
+button:active {
+  background-color: #dcdcdc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 25px;
+  font-family: cursive;
+  padding: 3% 0;
+}
+.aboutus {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body {
+  margin: 0;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  padding: 7% 15%;
+  margin: auto;
+  max-width: 800px;
+}
+.aboutme-container {
+  background-image: url(./assets/abt1.jpg);
+  background-position: center;
+}
+
+.name {
+  margin: 0;
+  padding: 0 5px;
+  font: 400 1.875em "718light";
+}
+.intro-text {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+} 
+
+.about-fourth-part {
+  justify-content: center;
+}
+
+.about-third-part {
+  margin: 0;
+  justify-content: center;
+}
+
+.about-part {
+  justify-content: center;
+  flex-direction: column;
+  background: lightsteelblue;
+  height: 240px;
+  max-width: 720px;
+}
+
+.contactme {
+  justify-content: center;
+  display: flex;
+  padding: 15px 0px;
+  color: white;
+}
+
+.skill {
+  display: flex;
+  padding: 1% 2% 1% 5%;
+}
+.skill-percentage-wrapper {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+}
+.skill-percentage {
+  background-color: green;
+  border-radius: 5px;
+}
+.skill-name {
+  width: 15%;
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: white;
+}
+.professional {
+  margin: auto;
+  max-width: 1080px;
+  padding-bottom: 100px;
+}
+.professional-container {
+  background-image: url(./assets/image1.webp);
+  background-position: center;
+}
+.profile-index {
+  color: lightslategray;
+}
+.header h3 {
+  font: normal normal normal 42px/1.4em lulo-clean-w01-one-bold,sans-serif;
+  color: white;
+  margin: 10px;
+}
+.knowledge-title {
+  text-align: center;
+  font: normal normal normal 24px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: white;
+  padding: 0 0 5%;
+}
+.knowledge {
+  padding: 2% 0;
+}
+.experience-chart {
+  position: relative;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+}
+.circle-1 {
+  top: 40px;
+}
+.circle-2 {
+  top: 200px;
+}
+.circle-3 {
+  top: 430px;
+}
+.experience-details {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.experience-details-1 {
+  margin: 0 0 0 50px;
+}
+.experience-details-2 {
+  margin: 160px 0 0 30px;
+}
+
+.work-details, .experience-details-2, .experience-details-1 {
+  flex-direction: column;
+  display: flex;
+}
+.experience {
+  padding-top: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+.experience-container {
+  background-image: url(./assets/exp1.jpg);
+  background-position: center;
+}
+.experience-chart {
+  padding: 40px 0 100px 0;
+}
+.years {
+  color: #00D646;
+  font-family: cursive;
+}
+.company-name, .work-designation {
+  font: normal normal normal 24px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+}
+
+.work-designation {
+  font-size: 18px;
+  padding: 20px 0 5px;
+}
+.designation {
+  font-size: 30px;
+  line-height: 0;
+  font-family: monospace;
+  color: white;
+}
+.technologies {
+  padding: 20px 0;
+}
+.title h2 {
+  margin: 0;
+  font: normal normal normal 50px/1.4em fantasy,sans-serif;
+  letter-spacing: 5px;
+  line-height: 55px;
+  color: white;
+}
+.title span.sign {
+    color: green;
+    font-family: monospace;
+}
+.contact-us {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+  /* margin-top: 100px;
+  margin-bottom: 100px; */
+  /* background-color: rgba(51, 59, 80, 1); */
+  padding: 50px 0;
+}
+
+.contact-email, .contact-intro {
+  font-size: 20px;
+  font-family: serif;
+}
+
+.contactus-container {
+  background-image: url(./assets/image1.jpg);
+  background-position: center;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-family: serif;
+  padding: 15px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+input.input-box {
+  height: 35px;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+.required-fields input.input-box {
+  width: 47%;
+}
+.required-fields {
+  display: flex;
+  justify-content: space-between;
+}
+.input-subject, .input-message {
+  width: 100%
+}
+.send-button {
+  cursor: pointer;
+  background-color: darkslategrey;
+}
+
+.previews-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4%;
+  height: fit-content;
+}
+
+.preview {
+  height: fit-content;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5%;
+  min-width: 300px;
+}
+
+.blog-title {
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.blog-summary {
+  font-family: sans-serif;
+  margin: 5px 0;
+}
+
+.blogs-container {
+  margin: 20px;
+  padding: 10px;
+}
+  .blog-container {
+  font-size: 20px;
+  font-family: serif;
+}
+
+.blog-preview-container {
+  height: 100%;
+}
+

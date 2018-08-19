@@ -30,3 +30,8 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ]
 };
+
+// module.exports =(env) => {
+//     console.log('running application in ' + env + ' mode.');
+//     return require(`./webpack.${env}.js`)
+// }

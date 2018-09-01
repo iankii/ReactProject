@@ -1,8 +1,28 @@
 import React from 'react';
-import InputBox from './../../components/GlobalComponents/InputBox';
-import Button from './../../components/GlobalComponents/Button';
-
+import InputBox from './../../PresentationalComponents/GlobalComponents/InputBox';
+import Button from './../../PresentationalComponents/GlobalComponents/Button';
+import Error from './../Error';
+ 
 class ContactUs extends React.Component {
+  onclick() {
+    console.log('clicked')
+    var error = document.getElementsByClassName('error-message');
+    error[0].classList.toggle('hidden', (this.validateName() && this.validateEmail()));
+  }
+
+  validateEmail() {
+    let email = document.getElementsByClassName('input-email')[0];
+    let validEmail = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value));
+    email.classList.toggle('error-input', !validEmail)
+    return validEmail;
+  }
+  validateName() {
+    let name = document.getElementsByClassName('input-name')[0];
+    let validName = (/^[A-Za-z\s]+$/).test(name.value);
+    name.classList.toggle('error-input', !validName)
+    return validName;
+  }
+
   render() {
     return (
       <div className="contact-us">
@@ -18,7 +38,8 @@ class ContactUs extends React.Component {
           </div>
           <InputBox name="input-subject" placeholder="Subject" />
           <InputBox name="input-message" placeholder="Message" />
-          <Button />
+          <Error  errorMessage="Please enter valid inputs"/>
+          <Button onclick={this.onclick.bind(this)}/>
         </div>
       </div>
     )

@@ -8,8 +8,8 @@ class AboutUs extends React.Component {
   render() {
     return (
     <div className="aboutus">
-      <div className="aboutme-container" autofocus><AboutMe /></div>
-      <div className="professional-container"><Professional /></div>
+      <div className="aboutme-container aboutus-section" autofocus><AboutMe /></div>
+      <div className="professional-container aboutus-section"><Professional /></div>
       <div className="experience-container"><Experience /></div>
      <div className="contactus-container"> <ContactUs /></div>
     </div>  

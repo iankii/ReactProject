@@ -3,6 +3,17 @@ html, body, #app, .main-container {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: red;
+}
+.error-input {
+  border: 3px solid red;
+}
+
 .main-container {
   background-image: url(./assets/blog-4.jpg);
   background-position: center;
@@ -136,6 +147,8 @@ body {
 .professional-container {
   background-image: url(./assets/image1.webp);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .profile-index {
   color: lightslategray;
@@ -193,6 +206,8 @@ body {
 .experience-container {
   background-image: url(./assets/exp1.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .experience-chart {
   padding: 40px 0 100px 0;
@@ -263,16 +278,17 @@ input.input-box {
   height: 35px;
   border-radius: 10px;
   margin-bottom: 3%;
+  padding: 5px;
 }
 .required-fields input.input-box {
-  width: 47%;
+  width: 45%;
 }
 .required-fields {
   display: flex;
   justify-content: space-between;
 }
 .input-subject, .input-message {
-  width: 100%
+  width: 97%
 }
 .send-button {
   cursor: pointer;
@@ -317,4 +333,66 @@ input.input-box {
 .blog-preview-container {
   height: 100%;
 }
+.skill-percentage-wrapper span {
+  margin-left: 10px;
+}
 
+@media screen and (max-width: 1000px)  {
+  .header a {
+    font-size: 55px;
+  }
+
+  .preview {
+    width: 100%
+  }
+  /* .aboutus-section {
+    height: 100vh;
+  }
+  .aboutme {
+    height: 100%;
+  }
+  .title {
+    height: 30%;
+  }
+  .title h2 {
+    font-size: 90px;
+    line-height: 100px;
+  }
+  .about-part {
+    height: 35%;
+    font-size: 35px;
+  }
+  .contactme {
+    font-size: 30px;
+  }
+  .professional {
+    height: 100vh;
+  }
+  .header {
+    padding: 5% 0;
+  }
+  .header h3 {
+    font-size: 75px;
+  } */
+  /* .professional .knowledge-title {
+    font-size: 35px;
+  }
+  .knowledge {
+    height: 80%;
+  }
+  .knowledge .skill {
+    padding: 3% 2% 3% 5%;
+  }
+  .knowledge .skill .skill-name {
+    font-size: 28px;
+    width: 32%;
+    color: cadetblue;
+  }
+  .skill-percentage-wrapper span {
+    font-size: 30px;
+  }
+  .experience-container {
+    height: 50vh
+  } */
+
+}

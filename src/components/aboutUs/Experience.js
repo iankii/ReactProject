@@ -1,6 +1,6 @@
 import React from 'react';
-import Circle from './../../components/GlobalComponents/Circle';
-import Divider from './../../components/GlobalComponents/Divider';
+import Circle from './../../PresentationalComponents/GlobalComponents/Circle';
+import Divider from './../../PresentationalComponents/GlobalComponents/Divider';
 import ExperienceDetails from './ExperienceDetails';
 
 class Experience extends React.Component {

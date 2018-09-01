@@ -1,5 +1,5 @@
 import React from 'react';
-import ChartBar from './../../components/GlobalComponents/ChartBar';
+import ChartBar from './../../PresentationalComponents/GlobalComponents/ChartBar';
 
 class Professional extends React.Component {
   render() {
